@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="title" content="electron-test" />
+        <meta name="description" content="Electronでローカルファイルの読み書き" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+        <title>electron-test</title>
+        <link rel="icon" href="./img/favicon.ico">
+        <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <script src="./js/index.js"></script>
+    </head>
+    <body>
+        <div>isElectron:<span id="is-electron"></span></div>
+        <h1>Electronテスト</h1>
+        <section>
+            <h2>ローカルファイルの読み書き</h2>
+            <textarea id="file-read-result" rows="20" cols="90"></textarea>
+            <div>
+                <button id="file-read-button">読み込み</button>
+                <button id="file-write-button">保存</button>
+            </div>
+        </section>
+        <section>
+            <h2>ローカルリソース</h2>
+            <img class="icon" src="./img/post-it.png"/>
+        </section>
+    </body>
+</html>
