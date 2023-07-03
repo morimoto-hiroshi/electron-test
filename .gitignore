@@ -12,3 +12,6 @@ local.properties
 
 # credentials directory
 .keys
+
+# Electron build output
+out/
