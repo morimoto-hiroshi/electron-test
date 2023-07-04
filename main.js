@@ -7,9 +7,6 @@ const createWindow = () => {
     const mainWindow = new BrowserWindow({
         width: 1200,
         height: 800,
-        webPreferences: {
-            nodeIntegration: true, //Electron6から必要らしい
-        }
     })
     mainWindow.loadFile('public/index.html', {query: {isElectron: true}});
 

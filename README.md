@@ -65,3 +65,4 @@ npm run make
 ## 参考
 
 + [Electron 公式 - クイックスタート](https://www.electronjs.org/ja/docs/latest/tutorial/quick-start)
++ [Zenn Electron入門 - メインプロセスとレンダラープロセス](https://zenn.dev/sprout2000/books/6f6a0bf2fd301c/viewer/13319)
