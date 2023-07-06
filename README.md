@@ -62,6 +62,18 @@ npm run make
 
 + コントロールパネル＞プログラムと機能 に electron-test が表示され、アンインストールできる。
 
+### index.htmlをfile:で読み込むことにともなう注意点
+
++ index.htmlのヘッダにCSP (Content-Security-Policy) を記述する。そうしないとjsやcssを読み込めない。
+
+```
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+```
+
++ [MDN - コンテンツセキュリティポリシー (CSP)](https://developer.mozilla.org/ja/docs/Web/HTTP/CSP)
+
++ js, css, faviconなどのhrefは相対パスで記述する。絶対パスは環境依存になるので使えない。
+
 ## 参考
 
 + [Electron 公式 - クイックスタート](https://www.electronjs.org/ja/docs/latest/tutorial/quick-start)
